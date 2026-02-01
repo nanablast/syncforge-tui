@@ -28,16 +28,33 @@ A cross-platform terminal user interface for database schema comparison and data
 
 ## Installation
 
+### Quick Install (macOS/Linux)
+
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/syncforge-tui.git
+curl -fsSL https://raw.githubusercontent.com/nanablast/syncforge-tui/master/install.sh | bash
+```
+
+### Cargo
+
+```bash
+cargo install syncforge-tui
+```
+
+### Download Binary
+
+Download pre-built binaries from [Releases](https://github.com/nanablast/syncforge-tui/releases):
+- **Linux**: `syncforge-tui-linux-x86_64`
+- **macOS Intel**: `syncforge-tui-macos-x86_64`
+- **macOS Apple Silicon**: `syncforge-tui-macos-aarch64`
+- **Windows**: `syncforge-tui-windows-x86_64.exe`
+
+### Build from Source
+
+```bash
+git clone https://github.com/nanablast/syncforge-tui.git
 cd syncforge-tui
-
-# Build
 cargo build --release
-
-# Run
-cargo run --release
+./target/release/syncforge-tui
 ```
 
 ## Keyboard Shortcuts
